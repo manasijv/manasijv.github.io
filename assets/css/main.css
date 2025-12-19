@@ -1678,7 +1678,7 @@ body {
   to { background-position: -10000px 5000px; }
 }
 
-/* Activities section */
+		/* Activities section */
 #activities h2 {
   font-size: 1rem;   /* smaller heading */
 }
@@ -1686,4 +1686,14 @@ body {
 #activities p {
   font-size: 0.8rem;   /* smaller subtext */
 }
+
+/* Force multiline header text on mobile */
+#header .content p.edu-text {
+  white-space: normal;
+}
+
+#header .content p.edu-text span {
+  display: block;
+}
+
 		
