@@ -1150,26 +1150,19 @@ input, select, textarea {
 		}
 
 		#bg:after {
-			-moz-transform: scale(1.125);
-  			-webkit-transform: scale(1.125);
-  			-ms-transform: scale(1.125);
-  			transform: scale(1.125);
-
-  			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-  			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-  			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
+			transform: scale(1.125);
   			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 
   			background-image:
-    		linear-gradient(315deg, rgba(238,238,238,0.85), rgba(236,69,52,0.85)),
-    		url("../../images/stars.png");
+    			linear-gradient(315deg, rgba(238,238,238,0.85), rgba(236,69,52,0.85)),
+    			url("../../images/stars.png");
 
-  			background-position: center;
- 			background-repeat: repeat;
- 		    background-size: auto;
+  			background-repeat: repeat;
+  			background-size: auto;
+  			background-position: 0 0;
 
+  			animation: move-stars 200s linear infinite;
   			z-index: 1;
-  			animation: move-twink-back 200s linear infinite;
 		}
 
 		body.is-article-visible #bg:after {
@@ -1191,11 +1184,6 @@ input, select, textarea {
         	from { background-position: 0 0; }
         	to { background-position: -10000px 5000px; }
         }
-	  	  
-@keyframes move-twink-back {
-  from { background-position: 0 0; }
-  to { background-position: -10000px 5000px; }
-}
 
 /* Wrapper */
 
