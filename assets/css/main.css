@@ -1153,16 +1153,12 @@ input, select, textarea {
 			transform: scale(1.125);
   			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 
-  			background-image:
-    			linear-gradient(315deg, rgba(238,238,238,0.85), rgba(236,69,52,0.85)),
-    			url("../../images/stars.png");
+  			background-image: url("../../images/bg_tracks.png");
+  			background-size: cover;
+  			background-position: center;
+  			background-repeat: no-repeat;
 
-  			background-repeat: repeat;
-  			background-size: auto;
-  			background-position: 0 0;
-
-  			animation: move-stars 200s linear infinite;
-  			z-index: 1;
+			z-index: 1;
 		}
 
 		body.is-article-visible #bg:after {
@@ -1179,11 +1175,6 @@ input, select, textarea {
 		body.is-preload #bg:before {
 			background-color: #000000;
 		}
-
-        @keyframes move-twink-back {
-        	from { background-position: 0 0; }
-        	to { background-position: -10000px 5000px; }
-        }
 
 /* Wrapper */
 
@@ -1664,36 +1655,6 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-		
-		/* Twinkling Starry Background */
-body {
-  background: #000;
-  overflow: auto !important;;
-  height: 100vh;
-  font-family: 'Lato', sans-serif;
-}
 
-@keyframes move-twink-back {
-  from { background-position: 0 0; }
-  to { background-position: -10000px 5000px; }
-}
-
-		/* Activities section */
-#activities h2 {
-  font-size: 1rem;   /* smaller heading */
-}
-
-#activities p {
-  font-size: 0.8rem;   /* smaller subtext */
-}
-
-/* Force multiline header text on mobile */
-#header .content p.edu-text {
-  white-space: normal;
-}
-
-#header .content p.edu-text span {
-  display: block;
-}
 
 		
